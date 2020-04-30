@@ -21,24 +21,22 @@ function isprime(number) {
   }
   return flag;
 }
-
-//IsEven
 var iseven = numberArray.filter((i) => i % 2 == 0);
-console.log(iseven);
+console.log("even numbers  " + iseven);
 var prime = numberArray.filter((i) => isprime(i) == true);
-console.log(prime);
+console.log("prime no.  " + prime);
 var nonprime = numberArray.filter((i) => isprime(i) == false);
-console.log(nonprime);
+console.log("non prime no.  " + nonprime);
 
 // lambda function
 let arr = [1, 2, 3, 4];
 arr.filter((value) => value % 2 === 0);
-console.log(arr);
+console.log("lambda " + arr);
 
 //map function
 
 let myArray = [1, 2, 3, 4];
-console.log(findSquareOfNumbers(myArray));
+console.log("square of numbers " + findSquareOfNumbers(myArray));
 
 function findSquareOfNumbers(arr) {
   return arr.map((i) => i * i);
@@ -47,6 +45,7 @@ function findSquareOfNumbers(arr) {
 //Reduce Function
 let array = [2, 3, 5, 10];
 multiply(array);
+
 function multiply(myArray) {
   const sum = myArray.reduce((total, i) => {
     return total + i;
